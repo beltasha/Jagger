@@ -3,7 +3,7 @@
 
 int main()
 {
-	printf("Hello World!");
+	printf("it will be a jabber client (I hope)");
 	system("pause");
 	return 0;
 }
