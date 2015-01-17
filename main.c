@@ -11,7 +11,7 @@
 
 
 
-void socketConnect(void)
+void socketConnect()
 {
 /* Start Winsock */
 
@@ -37,6 +37,7 @@ void socketConnect(void)
 
 /* resolve connecting socket */
 	printf("connecting to: %s port %s\n", inet_ntoa(server_addr.sin_addr),remoteport);
+	system("pause");
 	sin_size=sizeof(struct sockaddr_in);
 	if(connect(sock,(struct sockaddr*)&server_addr, sin_size) == -1) {
 		perror("connect");
@@ -47,6 +48,8 @@ int main()
 
 {
 	printf("it will be a jabber client (I hope)");
-	system("pause");
+	
+	socketConnect();
+	
 	return 0;
 }

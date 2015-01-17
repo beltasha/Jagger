@@ -1,6 +1,0 @@
-Makefile
-Makefile.in
-test-objects
-test-parser
-.deps
-.libs
