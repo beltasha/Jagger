@@ -14,42 +14,151 @@
 void socketConnect()
 {
 /* Start Winsock */
-
+	
 	WSADATA wsadata;
 	WORD version = (1 << 8) + 1;  /* Version 1.1 */
 	if (WSAStartup(version, &wsadata) != 0)
 	{	perror("initializing winsock");
 		exit(1);
 	}
-
+	
 /*  Create socket  */
-	if ( (sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+if ( (sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 	{	perror("opening steam socket in");
 		exit(1);
 	}
-
+	strcpy(remoteport,"5222");
+	//strcpy(remotehost,"12jabber.com");
+	 
 /*  Name socket*/
 	hostname=gethostbyname(remotehost);
 	server_addr.sin_family = AF_INET;
 	server_addr.sin_addr.s_addr = inet_addr( inet_ntoa(*((struct in_addr *)hostname->h_addr)) );
 	server_addr.sin_port = htons((unsigned short int) atoi(remoteport));  /* Use specified port */
-	memset(server_addr.sin_zero, 0, 8);
 
-/* resolve connecting socket */
+
 	printf("connecting to: %s port %s\n", inet_ntoa(server_addr.sin_addr),remoteport);
-	system("pause");
+	
 	sin_size=sizeof(struct sockaddr_in);
 	if(connect(sock,(struct sockaddr*)&server_addr, sin_size) == -1) {
 		perror("connect");
 		exit(1);}
+	
 }
 
-int main()
 
+void exitclient()
 {
-	printf("it will be a jabber client (I hope)");
-	
-	socketConnect();
-	
-	return 0;
+	printf("\n\n\tThanks for try!\n\n");
+	closesocket(sock);
+	WSACleanup();
+	exit(0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int sendout(char *message_out)
+{
+	printf("%s\n",message_out);
+	if (strstr(message_out,"</stream:") != 0)
+	{
+		exitclient();
+	}
+
+	if ((strstr(message_out,"<") != NULL))
+	if(send(sock,message_out,strlen(message_out),0) == -1) {
+	perror("send");
+	//exit(1);
+	}
+//		printf(" fin send out - buflen = %i (%i)\n",strlen(message_out), flap_out.data_length);	/* Resultat buffer lecture */
+return(0);
+}
+
+int main(int argc, char *argv[])
+{
+	printf("Hey!");
+
+
+
+/* encodage du pass */
+strcpy(client,argv[0]);
+strcpy(user,argv[1]);
+if (strstr(user,"@") != NULL){
+	strcpy(nick,user);
+	if (strstr(user,"/") != NULL)
+		sscanf(nick,"%[^@]@%[^/]/%s",user,domain,ressource);
+	else
+		{sscanf(nick,"%[^@]@%s",user,domain);
+		//strcpy(ressource,CLIENT_NAME);}
+	}
+strcpy(pass,argv[2]);
+}
+if (argv[3] != NULL)
+	strcpy(remotehost,argv[3]);
+else
+	strcpy(remotehost,domain);
+if (domain==NULL)
+	strcpy(domain,remotehost);
+
+//if (argv[4] != NULL)
+if ((argv[4] != NULL) && (argv[3] != NULL))
+	strcpy(remoteport,argv[4]);
+else
+	strcpy(remoteport,"5222");
+
+
+
+printf("\n\tCONNECTED as %s@%s on %s:%s!\n\n",user,domain,remotehost,remoteport);
+
+
+	socketConnect();
+	login();
+    flapon(); printf("get stream...\n");
+    toc_signon(); printf("server signon...\n");
+	toc_init_done();
+
+	while(1) 
+	{
+	gets(message_out);
+	 
+	choose_command();
+	sendout(message_out);
+	}
+//printf("kbhit:'%s'\n",message_out);
+
+
+	
+
+//system("pause");
+	return(0);
+} // end of main()
