@@ -61,6 +61,15 @@ void hello_message()
 
 }
 
+int sendout(char *message_out)
+{
+	if (send(sock, message_out, strlen(message_out), 0) == -1) {
+		perror("send");
+		exit(1);
+	}
+	return(0);
+}
+
 void exitclient()
 {
 	printf("\n\n\tThanks for try!\n\n");
