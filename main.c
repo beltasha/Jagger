@@ -46,6 +46,20 @@ if ( (sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 	
 }
 
+void hello_message()
+{
+	char buf[800];
+	sprintf_s(message_out, 3000,
+		"<?xml version='1.0' encoding='%s'?>"
+		"<stream:stream to='%s' xmlns='jabber:client' xmlns:stream='http://etherx.jabber.org/streams' xml:l='ru' version='1.0'>", remotehost);
+	sendout(message_out);
+	sequence_number_client = 3615;
+	recv(sock, buf, 800, 0);
+	//printf("%s\n", buf);
+	recv(sock, buf, 800, 0);
+	//printf("%s\n", buf);
+
+}
 
 void exitclient()
 {
