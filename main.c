@@ -46,6 +46,7 @@ if ( (sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
 	
 }
 
+
 void hello_message()
 {
 	char buf[800];
@@ -70,6 +71,54 @@ int sendout(char *message_out)
 	return(0);
 }
 
+void autentification()
+{
+	    char buf[400];
+		char challenge[100];
+		char decode[100];
+		int n, p;
+		char* pass = "iloveyasp";
+		char* md5pass;
+
+		//запрос авторизации у сервера
+		sprintf_s(message_out, 800, "<auth xmlns='urn:ietf:params:xml:ns:xmpp-sasl' mechanism='DIGEST-MD5'/>");
+		sendout(message_out);
+		//парсим challenge-ответ
+		recv(sock, buf, 800, 0);
+		n = strstr(buf, "'>") - buf;
+		p = strstr(buf, "</c") - buf;
+		n += 2;
+
+		int i = 0;
+
+		for (i = 0; n < p ; i++)
+		{
+			challenge[i] = buf[n];
+			n++;
+		}
+		challenge[i] = '\0';
+		b64_decode(challenge, decode);
+		//выдираем nonce
+		p = strstr(decode, "\",q") - decode-7;
+		for (i = 0; i < p; i++)
+		{
+			nonce[i] = decode[i+7];
+		}
+		nonce[i] = '\0';
+
+		printf("%s\n", buf);
+
+		md5pass = str2md5(pass, strlen(pass));
+
+		sprintf_s(buf, 400, "username=\"delphi - test\",realm = \"%s\", nonce = \"%s\", cnonce = \"2313e064449daa0ca2b76363525059ebd\", nc = 00000001, qop = auth, digest - uri = \"xmpp/jabber.ru\", charset = utf - 8,response = %s", "jabber.ru", nonce, md5pass);
+
+		printf("%s\n", challenge);
+		printf("%s\n", decode);
+		printf("%s\n", nonce);
+		printf("%s\n", pass);
+}
+
+
 void exitclient()
 {
 	printf("\n\n\tThanks for try!\n\n");
@@ -77,6 +126,7 @@ void exitclient()
 	WSACleanup();
 	exit(0);
 }
+
 
 
 
