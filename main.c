@@ -62,6 +62,73 @@ void hello_message()
 
 }
 
+void autentification()
+{
+/*аутенфикация типом PLAIN*/
+	
+		char *msg_bind_src = ""
+		"<iq id=\"dummyid\" type=\"set\">"
+		"<bind xmlns=\"urn:ietf:params:xml:ns:xmpp-bind\">"
+		"<resource>%s</resource>"
+		"</bind>"
+		"</iq>";
+
+		char *msg_show = "<presence><show></show></presence>";
+
+	    char buf[600];
+		char jstr[600];
+		char* decode;
+		int len, n, p = 0;
+
+		//преобразуем логин и пароль в вид:
+		// \x00username\x00pass
+		len = create_binstr(jstr, user, pass);
+		//переодим в base64
+		decode = base64_encode(jstr, len, &len);
+		decode[len] = '\0';
+		//подготавливаем пакет и отправляем на сервер
+		sprintf_s(message_out, 500, "<auth xmlns=\"urn:ietf:params:xml:ns:xmpp-sasl\" mechanism=\"PLAIN\">%s</auth>", decode);
+		sendout(message_out);
+
+		recv(sock, buf, 500, 0);
+		recv(sock, buf, 500, 0);
+		if (strstr(buf, "success") == NULL) {
+			perror("Error: not authentificate\n");
+			return;
+		}
+		
+		printf("Authentificate!\n");
+		//делаем запрос на JID
+		sprintf_s(message_out, 500, "<?xml version='1.0' encoding='UTF-8'?><stream:stream to='%s' xmlns='jabber:client' xmlns:stream= 'http://etherx.jabber.org/streams' xml:l='ru' version='1.0'>", remotehost);
+
+		sendout(message_out);
+		recv(sock, buf, 500, 0);
+		//выдираем JID
+		n = strstr(buf, "id='") - buf;
+		p = strstr(buf, "' from") - buf;
+		n += 4;
+
+		int i = 0;
+
+		for (i = 0; n < p; i++)
+		{
+			jid[i] = buf[n];
+			n++;
+		}
+		jid[i] = '\0';
+		printf("JID: %s \n", jid);
+		//Отправляем серверу JID-ressource
+		sprintf_s(message_out, 500, msg_bind_src, ressource);
+		sendout(message_out);
+		recv(sock, buf, 500, 0);
+		recv(sock, buf, 500, 0);
+
+		//Отправляем статус "Онлайн"
+		sprintf_s(message_out, 500, msg_show);
+		sendout(message_out);
+
+}
+
 int sendout(char *message_out)
 {
 	if (send(sock, message_out, strlen(message_out), 0) == -1) {
