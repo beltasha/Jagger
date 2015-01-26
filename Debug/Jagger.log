@@ -1,5 +1,5 @@
-﻿Build started 25.01.2015 0:14:37.
-     1>Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger\Jagger.vcxproj" on node 2 (build target(s)).
+﻿Build started 25.01.2015 23:50:34.
+     1>Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger\Jagger.vcxproj" on node 3 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\Jagger.unsuccessfulbuild".
        ClCompile:
@@ -7,44 +7,35 @@
          main.c
      1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(52): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(69): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(70): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(76): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(77): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(82): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(83): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(84): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(86): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(95): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(99): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(104): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(114): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(115): warning C4013: 'sendout' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(117): warning C4013: 'getin' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(123): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(125): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(130): error C2143: syntax error : missing ';' before 'type'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(224): warning C4013: 'toc_init_done' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(56): warning C4013: 'sendout' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(92): error C2143: syntax error : missing ';' before 'type'
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(94): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(94): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(96): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(99): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(100): warning C4013: 'b64_decode' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'nonce' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2109: subscript requires array or pointer type
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2065: 'nonce' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2065: 'i' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2109: subscript requires array or pointer type
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(111): warning C4013: 'str2md5' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(111): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(113): error C2065: 'nonce' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(117): error C2065: 'nonce' : undeclared identifier
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(164): error C2084: function 'int sendout(char *)' already has a body
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(218): warning C4013: 'login' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(219): warning C4013: 'flapon' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(220): warning C4013: 'toc_signon' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(221): warning C4013: 'toc_init_done' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(227): warning C4013: 'choose_command' undefined; assuming extern returning int
      1>Done Building Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger\Jagger.vcxproj" (build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.40
+Time Elapsed 00:00:00.76
