@@ -62,6 +62,19 @@ void hello_message()
 
 }
 
+int create_binstr(char *dstbuf, char *u, char *p) {
+
+	int len;
+
+	memset(dstbuf, 0, 600);
+	memcpy(dstbuf + 1, u, strlen(u));
+	memcpy(dstbuf + 2 + strlen(u), p, strlen(p));
+	len = strlen(u) + strlen(p) + 2;
+
+	return len;
+}
+
+
 void autentification()
 {
 /*аутенфикация типом PLAIN*/

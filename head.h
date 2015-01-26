@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-//#include "strophe.h"
+
 #include <string.h> // strlen
 
 
@@ -21,7 +21,7 @@ struct sockaddr_in si_client_addr;
 struct sockaddr_in si_server_addr;
 struct hostent *si_hostname;
 int sock;
-//int sin_size;
+int sin_size;
 int si_sock;
 
 void socketConnect(void);
@@ -36,3 +36,4 @@ char ressource[128];
 char message_out[3000];
 char nonce[20];
 char jid[20];
+unsigned short sequence_number_client;
