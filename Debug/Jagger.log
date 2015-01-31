@@ -1,41 +1,67 @@
-﻿Build started 25.01.2015 23:50:34.
-     1>Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger\Jagger.vcxproj" on node 3 (build target(s)).
-     1>InitializeBuildStatus:
-         Touching "Debug\Jagger.unsuccessfulbuild".
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
+﻿Build started 31.01.2015 19:25:49.
+     1>Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\key\Documents\юниверсити\Jagger\libxml" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt main.c
          main.c
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(56): warning C4013: 'sendout' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(92): error C2143: syntax error : missing ';' before 'type'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(94): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(94): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(96): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(99): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(100): warning C4013: 'b64_decode' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(103): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'nonce' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2109: subscript requires array or pointer type
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(105): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2065: 'nonce' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2065: 'i' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(107): error C2109: subscript requires array or pointer type
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(111): warning C4013: 'str2md5' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(111): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(113): error C2065: 'nonce' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(117): error C2065: 'nonce' : undeclared identifier
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(164): error C2084: function 'int sendout(char *)' already has a body
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(218): warning C4013: 'login' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(219): warning C4013: 'flapon' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(220): warning C4013: 'toc_signon' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(221): warning C4013: 'toc_init_done' undefined; assuming extern returning int
-     1>c:\users\key\documents\юниверсити\jagger\jagger\main.c(227): warning C4013: 'choose_command' undefined; assuming extern returning int
-     1>Done Building Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger\Jagger.vcxproj" (build target(s)) -- FAILED.
+     1>c:\users\key\documents\юниверсити\jagger\libxml\globals.h(18): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\key\documents\юниверсити\jagger\main.c(32): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(59): warning C4013: 'sendout' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\main.c(115): warning C4013: 'base64_encode' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\main.c(115): warning C4047: '=' : 'char *' differs in levels of indirection from 'int'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(138): warning C4013: 'recvall' undefined; assuming extern returning int
+     1>c:\users\key\documents\юниверсити\jagger\main.c(141): warning C4047: 'function' : 'xmlDocPtr *' differs in levels of indirection from 'xmlDocPtr'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(141): warning C4024: 'return_jid' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(151): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(109): warning C4101: 'n' : unreferenced local variable
+     1>c:\users\key\documents\юниверсити\jagger\main.c(221): warning C4133: 'function' : incompatible types - from '_xmlNode *' to 'xmlDocPtr'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(229): warning C4047: 'function' : 'xmlDocPtr' differs in levels of indirection from 'xmlDocPtr *'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(229): warning C4024: 'xmlDocGetRootElement' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(238): warning C4090: '=' : different 'const' qualifiers
+     1>c:\users\key\documents\юниверсити\jagger\main.c(248): warning C4047: 'function' : 'xmlDocPtr *' differs in levels of indirection from '_xmlNode *'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(248): warning C4024: 'return_jid' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(257): warning C4047: 'function' : 'xmlDocPtr' differs in levels of indirection from 'xmlDocPtr *'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(257): warning C4024: 'xmlDocGetRootElement' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(267): warning C4090: '=' : different 'const' qualifiers
+     1>c:\users\key\documents\юниверсити\jagger\main.c(276): warning C4090: '=' : different 'const' qualifiers
+     1>c:\users\key\documents\юниверсити\jagger\main.c(292): warning C4047: 'function' : 'xmlDocPtr *' differs in levels of indirection from '_xmlNode *'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(292): warning C4024: 'return_contacts_list' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(315): warning C4047: 'return' : 'int' differs in levels of indirection from 'char [24]'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(366): warning C4047: 'return' : 'int' differs in levels of indirection from 'char [24]'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(398): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : see declaration of 'sscanf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(399): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(408): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : see declaration of 'sscanf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(415): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(425): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(437): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : see declaration of 'sscanf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(440): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(448): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(452): warning C4047: 'function' : 'xmlDocPtr *' differs in levels of indirection from 'xmlDocPtr'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(452): warning C4024: 'return_contacts_list' : different types for formal and actual parameter 1
+     1>c:\users\key\documents\юниверсити\jagger\main.c(459): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(465): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(507): warning C4996: 'kbhit': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _kbhit. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\conio.h(133) : see declaration of 'kbhit'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(510): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(254) : see declaration of 'gets'
+     1>c:\users\key\documents\юниверсити\jagger\main.c(476): warning C4101: 'a' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\key\Documents\юниверсити\Jagger\Debug\Jagger.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib libiconv.lib libxml2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\key\Documents\юниверсити\Jagger\Debug\Jagger.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\key\Documents\юниверсити\Jagger\Debug\Jagger.lib" /MACHINE:X86 Debug\base64.obj
+         Debug\main.obj
+         Jagger.vcxproj -> C:\Users\key\Documents\юниверсити\Jagger\Debug\Jagger.exe
+     1>Done Building Project "C:\Users\key\Documents\юниверсити\Jagger\Jagger.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:07.68
